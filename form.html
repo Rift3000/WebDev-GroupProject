@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+	<title> New User Form </title>
+	<meta charset="UTF-8" http-equiv="refresh" content="600" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/449908a2fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="gridz">
+    <h2 class="bugs"><i class="fas fa-pastafarianism"> Bug Issue Tracker</i></h2>
+    
+    <section class="gridL"> 
+    
+        <nav>
+            <p> <b><i class="fas fa-home">Home</i></b></p>
+            <p> <b><i class="fas fa-user-plus">Add User</i></b></p>
+            <p> <b><i class="fas fa-plus-circle">New User</i></b></p>
+            <p> <b><i class="fas fa-power-off">Log Out</i></b></p>
+        </nav>
+    
+    </section>
+    
+    <main class="gridR"> 
+        <h1>New User</h1>
+    
+        <form action="/dash.php" method="get">
+        FirstName:<br>
+        <input type="text" name="firstname" placeholder="Your First Name" class="flex" required \><br>
+        LastName:<br>
+        <input type="text" name="lastname" placeholder="Your Last Name" class="flex" required \><br>
+        Password:<br>
+        <input type="password" name="password" pattern="^(?=.*?[0-9])(?=.*?[a-z])(?=.*?[A-Z]).{8,}$" placeholder="A Strong Password" class="flex" required \><br>
+        Email:<br>
+        <input type="email" name="email" placeholder="Your email address" class="flex" required \>
+        <br>
+        <input type="submit" name="Submit" class="flex2">
+        <!--(?=.*?[0-9])(?=.*?[a-z])(?=.*?[A-Z]).{8,} -->
+                
+        </form>
+    </main>
+    </div>
+    
+</body>
+</html>
